@@ -1,0 +1,10 @@
+.vscode
+__pycache__/*
+*.bam
+*.sam
+*.bai
+*.amb
+*.ann
+*.bwt
+*.pac
+*.sa
