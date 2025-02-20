@@ -57,7 +57,6 @@ def create_report(report_list: list[ReportRow]):
             percent_mutated = mutation.frequency / report_row.total_reads * 100
             mutations_str = f"{percent_mutated}% of the reads at position {mutation.base_pos} had the {mutation.mutation}"
             mutations_str_list.append(mutations_str)
-        print("No mutations found")
         final_mutations_str = "no mutations"
         # if there are mutations append them
         if(len(mutations_str_list) > 0):
@@ -75,32 +74,38 @@ def pileup():
 
     for clinical_data_row in clinical_data:
         samfile = pysam.AlignmentFile(f"sorted_bams/{clinical_data_row.name}.sorted.bam", "rb")
-        #Since our reference only has a single sequence, we're going to pile up ALL of the reads. Usually you would do it in a specific region (such as chromosome 1, position 1023 to 1050 for example)
+        
+        ntdict = {}  # To store mutations (base mismatches) at each position
+        # Iterate over the pileup columns
         for pileupcolumn in samfile.pileup():
-            #use a dictionary to count up the bases at each position
-            ntdict = {}
+            
             for pileupread in pileupcolumn.pileups:
+                # Skip deletions and reference skips as you're only interested in mismatches
                 if not pileupread.is_del and not pileupread.is_refskip:
-                    # get the base at the query postion
                     base = pileupread.alignment.query_sequence[pileupread.query_position]
-                    # get the reference base, and check if it equals the base at the query postion
-                    ref_base = ref_seq[pileupread.query_position] if pileupread.query_position < len(ref_seq) else ""
-                    if(base != ref_base):
-                        # make a tuple with (frequency, query position) mapped to the base
-                        if(base not in ntdict.keys()):
+                    ref_base = ref_seq[pileupcolumn.reference_pos] if pileupcolumn.reference_pos < len(ref_seq) else ""
+                    
+                    # Check for a mismatch (where the base in the read does not match the reference)
+                    if base != ref_base:
+                        if base not in ntdict:
                             ntdict[base] = (1, pileupread.query_position)
                         else:
-                            ntdict[base] = (ntdict[base][0], pileupread.query_position)
-        # loop through the ntdict items looking for mutations, their frequency, and their base position 
-        mutations: list[Mutation] = []
-        for base, freq_base_pos in ntdict.items():
-            mutation = Mutation(mutation=base, frequency=freq_base_pos[0], base_pos=freq_base_pos[1])
+                            current_freq, _ = ntdict[base]
+                            ntdict[base] = (current_freq + 1, pileupread.query_position)
+
+        # After processing all pileup reads for this column, store the mutations (mismatches)
+        mutations = []
+        for base, (freq, pos) in ntdict.items():
+            mutation = Mutation(mutation=base, frequency=freq, base_pos=pos)
             mutations.append(mutation)
+
+        # Create a report row for each pileup column (just mismatches, no insertions or deletions)
         print(f"Creating mutation report row for {clinical_data_row.name}")
-        # create a report row that has the relevant clinical data, and the mutation data along with it.
         report_row = ReportRow(sample_name=clinical_data_row.name, color=clinical_data_row.color, total_reads=pileupcolumn.n, mutations=mutations)
         report_list.append(report_row)
+
         samfile.close()
+    
     return report_list
 
 

@@ -1,50 +1,50 @@
-Sample Abbey had a Black mold, 699 reads, and had no mutations.
-Sample Adelaide had a Orange mold, 548 reads, and had no mutations.
-Sample Alana had a Black mold, 581 reads, and had no mutations.
-Sample Arabella had a Black mold, 519 reads, and had no mutations.
-Sample Arianna had a Orange mold, 301 reads, and had no mutations.
-Sample Bobby had a Black mold, 387 reads, and had no mutations.
-Sample Brayden had a Black mold, 566 reads, and had no mutations.
-Sample Bridget had a Orange mold, 600 reads, and had no mutations.
-Sample Bruce had a Orange mold, 547 reads, and had no mutations.
-Sample Byron had a Orange mold, 431 reads, and had no mutations.
-Sample Cali had a Orange mold, 467 reads, and had no mutations.
-Sample Camilla had a Orange mold, 441 reads, and had no mutations.
-Sample Case had a Black mold, 388 reads, and had no mutations.
-Sample Cason had a Black mold, 588 reads, and had no mutations.
-Sample Damien had a Black mold, 570 reads, and had no mutations.
-Sample Dania had a Black mold, 626 reads, and had no mutations.
-Sample Dereon had a Orange mold, 322 reads, and had no mutations.
-Sample Destiney had a Orange mold, 683 reads, and had no mutations.
-Sample Dominik had a Black mold, 381 reads, and had no mutations.
-Sample Gabrielle had a Orange mold, 334 reads, and had no mutations.
-Sample Giancarlo had a Orange mold, 499 reads, and had no mutations.
-Sample Greta had a Black mold, 315 reads, and had no mutations.
-Sample Israel had a Orange mold, 395 reads, and had no mutations.
-Sample Javion had a Orange mold, 532 reads, and had no mutations.
-Sample Jaylen had a Black mold, 329 reads, and had no mutations.
-Sample Jazlyn had a Yellow mold, 526 reads, and had no mutations.
-Sample Jordyn had a Black mold, 464 reads, and had no mutations.
-Sample Jordyna had a Yellow mold, 305 reads, and had no mutations.
-Sample Joshua had a Black mold, 460 reads, and had no mutations.
-Sample Justus had a Black mold, 575 reads, and had no mutations.
-Sample Kamden had a Orange mold, 625 reads, and had no mutations.
-Sample Karlee had a Yellow mold, 641 reads, and had no mutations.
-Sample Kayla had a Yellow mold, 593 reads, and had no mutations.
-Sample Keaton had a Green mold, 442 reads, and had no mutations.
-Sample Kian had a Green mold, 372 reads, and had no mutations.
-Sample Kirsten had a Black mold, 313 reads, and had no mutations.
-Sample Libby had a Yellow mold, 306 reads, and had no mutations.
-Sample Lorelei had a Orange mold, 352 reads, and had no mutations.
-Sample Mariela had a Yellow mold, 523 reads, and had no mutations.
-Sample Martin had a Green mold, 588 reads, and had no mutations.
-Sample Mckayla had a Green mold, 620 reads, and had no mutations.
-Sample Mckenzie had a Black mold, 342 reads, and had no mutations.
-Sample Natalia had a Green mold, 683 reads, and had no mutations.
-Sample Santiago had a Orange mold, 671 reads, and had no mutations.
-Sample Sarai had a Black mold, 480 reads, and had no mutations.
-Sample Serena had a Green mold, 468 reads, and had no mutations.
-Sample Shelby had a Yellow mold, 466 reads, and had no mutations.
-Sample Sienna had a Green mold, 536 reads, and had no mutations.
-Sample Terry had a Orange mold, 694 reads, and had no mutations.
-Sample Tristian had a Black mold, 393 reads, and had no mutations.
+Sample Abbey had a Black mold, 699 reads, and had 52.07439198855508% of the reads at position 13 had the C.
+Sample Adelaide had a Orange mold, 548 reads, and had 51.64233576642335% of the reads at position 83 had the C.
+Sample Alana had a Black mold, 581 reads, and had 47.50430292598967% of the reads at position 13 had the C.
+Sample Arabella had a Black mold, 519 reads, and had 49.51830443159923% of the reads at position 13 had the C.
+Sample Arianna had a Orange mold, 301 reads, and had 45.182724252491695% of the reads at position 83 had the C.
+Sample Bobby had a Black mold, 387 reads, and had 52.71317829457365% of the reads at position 13 had the C.
+Sample Brayden had a Black mold, 566 reads, and had 48.58657243816255% of the reads at position 13 had the C.
+Sample Bridget had a Orange mold, 600 reads, and had 49.833333333333336% of the reads at position 83 had the C.
+Sample Bruce had a Orange mold, 547 reads, and had 54.11334552102377% of the reads at position 83 had the C.
+Sample Byron had a Orange mold, 431 reads, and had 49.88399071925754% of the reads at position 83 had the C.
+Sample Cali had a Orange mold, 467 reads, and had 51.17773019271949% of the reads at position 83 had the C.
+Sample Camilla had a Orange mold, 441 reads, and had 52.60770975056689% of the reads at position 83 had the C.
+Sample Case had a Black mold, 388 reads, and had 48.71134020618557% of the reads at position 13 had the C.
+Sample Cason had a Black mold, 588 reads, and had 48.97959183673469% of the reads at position 13 had the C.
+Sample Damien had a Black mold, 570 reads, and had 48.421052631578945% of the reads at position 13 had the C.
+Sample Dania had a Black mold, 626 reads, and had 47.92332268370607% of the reads at position 13 had the C.
+Sample Dereon had a Orange mold, 322 reads, and had 53.105590062111794% of the reads at position 83 had the C.
+Sample Destiney had a Orange mold, 683 reads, and had 48.02342606149341% of the reads at position 83 had the C.
+Sample Dominik had a Black mold, 381 reads, and had 53.805774278215225% of the reads at position 13 had the C.
+Sample Gabrielle had a Orange mold, 334 reads, and had 49.700598802395206% of the reads at position 83 had the C.
+Sample Giancarlo had a Orange mold, 499 reads, and had 48.49699398797595% of the reads at position 83 had the C.
+Sample Greta had a Black mold, 315 reads, and had 46.666666666666664% of the reads at position 13 had the C.
+Sample Israel had a Orange mold, 395 reads, and had 48.60759493670886% of the reads at position 83 had the C.
+Sample Javion had a Orange mold, 532 reads, and had 48.68421052631579% of the reads at position 83 had the C.
+Sample Jaylen had a Black mold, 329 reads, and had 51.3677811550152% of the reads at position 13 had the C.
+Sample Jazlyn had a Yellow mold, 526 reads, and had 52.47148288973384% of the reads at position 120 had the G.
+Sample Jordyn had a Black mold, 464 reads, and had 47.41379310344828% of the reads at position 13 had the C.
+Sample Jordyna had a Yellow mold, 305 reads, and had 47.540983606557376% of the reads at position 120 had the G.
+Sample Joshua had a Black mold, 460 reads, and had 46.73913043478261% of the reads at position 13 had the C.
+Sample Justus had a Black mold, 575 reads, and had 45.73913043478261% of the reads at position 13 had the C.
+Sample Kamden had a Orange mold, 625 reads, and had 52.480000000000004% of the reads at position 83 had the C.
+Sample Karlee had a Yellow mold, 641 reads, and had 49.141965678627145% of the reads at position 120 had the G.
+Sample Kayla had a Yellow mold, 593 reads, and had 49.915682967959526% of the reads at position 120 had the G.
+Sample Keaton had a Green mold, 442 reads, and had 46.83257918552036% of the reads at position 134 had the C.
+Sample Kian had a Green mold, 372 reads, and had 51.075268817204304% of the reads at position 134 had the C.
+Sample Kirsten had a Black mold, 313 reads, and had 44.72843450479233% of the reads at position 13 had the C.
+Sample Libby had a Yellow mold, 306 reads, and had 49.01960784313725% of the reads at position 120 had the G.
+Sample Lorelei had a Orange mold, 352 reads, and had 48.29545454545455% of the reads at position 83 had the C.
+Sample Mariela had a Yellow mold, 523 reads, and had 48.37476099426386% of the reads at position 120 had the G.
+Sample Martin had a Green mold, 588 reads, and had 50.0% of the reads at position 134 had the C.
+Sample Mckayla had a Green mold, 620 reads, and had 50.16129032258064% of the reads at position 134 had the C.
+Sample Mckenzie had a Black mold, 342 reads, and had 50.58479532163743% of the reads at position 13 had the C.
+Sample Natalia had a Green mold, 683 reads, and had 48.02342606149341% of the reads at position 134 had the C.
+Sample Santiago had a Orange mold, 671 reads, and had 50.074515648286145% of the reads at position 83 had the C.
+Sample Sarai had a Black mold, 480 reads, and had 52.083333333333336% of the reads at position 13 had the C.
+Sample Serena had a Green mold, 468 reads, and had 45.94017094017094% of the reads at position 134 had the C.
+Sample Shelby had a Yellow mold, 466 reads, and had 46.78111587982833% of the reads at position 120 had the G.
+Sample Sienna had a Green mold, 536 reads, and had 52.98507462686567% of the reads at position 134 had the C.
+Sample Terry had a Orange mold, 694 reads, and had 47.83861671469741% of the reads at position 83 had the C.
+Sample Tristian had a Black mold, 393 reads, and had 50.89058524173028% of the reads at position 13 had the C.
