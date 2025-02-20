@@ -4,9 +4,26 @@ import pysam
 # What is a pileup? It is "piling up" all the reads that have mapped to a given position of your reference.
 # It is a useful way to see what reads have a mutation and what don't. 
 
+class Mutation:
+    
+    def __init__(self, mutation, frequency):
+        self.mutation = mutation
+        self.frequency = frequency
+
+
+class ReportRow:
+
+    def __init__(self, sample_name, color, total_reads, base_pos, mutations: list[Mutation]):
+        self.sampe_name = sample_name
+        self.color = color
+        self.total_reads = total_reads
+        self.base_pos = base_pos
+        self.mutations = mutations
+
+
 def pileup():
     #test file, replaced with the sorted.bam you are using. Make sure it is indexed! (Use samtools index yourbam.sorted.bam)
-    samfile = pysam.AlignmentFile("/home/rbif/week5/necessary_scripts/faker.sorted.bam", "rb")
+    samfile = pysam.AlignmentFile("faker.sorted.bam", "rb")
 
     #Since our reference only has a single sequence, we're going to pile up ALL of the reads. Usually you would do it in a specific region (such as chromosome 1, position 1023 to 1050 for example)
     for pileupcolumn in samfile.pileup():
@@ -23,7 +40,11 @@ def pileup():
                 # This dictionary will hold all of the base read counts per nucletoide per position.
                 # Use the dictionary to calculate the frequency of each site, and report it if if the frequency is NOT  100% / 0%. 
                 #############################################
-        print (ntdict)
+                if(base not in ntdict.keys()):
+                    ntdict[base] = 1
+                else:
+                    ntdict[base] += 1
+        print(ntdict)
     samfile.close()
 
 if __name__=="__main__":
